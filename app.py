@@ -6,7 +6,7 @@ app = Flask(__name__)
 # route the retrn data
 @app.route("/", methods=["GET"])
 def api_fun():
-    # call RFmodel
+    # call random forest model
     dict_out = model_train()
     return {
         'train_features': dict_out["train_features"],
