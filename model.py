@@ -7,28 +7,28 @@ import numpy as np
 
 
 def model_train():
-    # Load the Iris dataset
+    # Load the Iris dataset on 26 jan 2025
     iris = load_iris()
     X = iris.data  
     y = iris.target  
 
-    # Split the dataset into training and testing sets
+    # Split the dataset into training and testing sets on 26 jan 2025
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-    # Create a Random Forest Classifier
+    # Create a Random Forest Classifier on 26 jan 2025
     rf_classifier = RandomForestClassifier(n_estimators=100, random_state=42)
 
-    # Train the model
+    # Train the model on 26 jan 2025
     rf_classifier.fit(X_train, y_train)
 
-    # Make predictions
+    # Make predictions on 26 jan 2025
     y_pred = rf_classifier.predict(X_test)
 
-    # Evaluate the model
+    # Evaluate the model on 26 jan 2025
     print("Accuracy:", accuracy_score(y_test, y_pred))
     print("\nClassification Report:\n", classification_report(y_test, y_pred, target_names=iris.target_names))
 
-    # Create a dictionary with dataset lengths
+    # Create a dictionary with dataset lengths on 26 jan 2025
     dataset_lengths = {
         'train_features': len(X_train),
         'train_labels': len(y_train),
